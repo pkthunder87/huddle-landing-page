@@ -1,0 +1,57 @@
+// CSS Custom Properties
+:root {
+  // ## Colors
+
+  // ### Primary
+
+  --color-violet: hsl(257, 40%, 49%);
+  --color-magenta: hsl(300, 69%, 71%);
+
+  // ### Headings
+  --font-poppins: "Poppins";
+  // - Weights: 400, 600
+
+  // ### Body
+  --font-open-sans: "Open Sans";
+  // - Weights: 400
+}
+
+/*
+## Icons
+
+For the social icons, you can use a font icon library. Some suggestions can be found below:
+
+- [Font Awesome](https://fontawesome.com/)
+- [IcoMoon](https://icomoon.io/)
+- [Ionicons](https://ionicons.com/)
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+
+  font-family: var(--font-open-sans), sans-serif;
+  font-size: 1.6rem;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
