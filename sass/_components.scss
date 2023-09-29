@@ -1,0 +1,13 @@
+.huddle {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+
+  .grid-1st {
+    grid-column: span 2;
+  }
+
+  .grid-4th {
+    grid-column: span 2;
+  }
+}
