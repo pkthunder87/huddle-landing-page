@@ -35,10 +35,12 @@ html {
 body {
   height: 800px;
   width: 1440px;
-  overflow: hidden;
   font-family: var(--font-open-sans), sans-serif;
   font-size: 1.6rem;
   text-align: left;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -62,19 +64,25 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
+  width: 1200px;
+  height: 800px;
+  gap: 10rem;
 }
 .huddle .grid-1st {
   grid-column: span 2;
 }
 .huddle .grid-4th {
   grid-column: span 2;
+  justify-self: end;
+  margin-top: -4rem;
 }
 
 .attribution {
   font-size: 11px;
-  text-align: center;
+  text-align: left;
   position: absolute;
-  bottom: 12rem;
+  bottom: 4rem;
+  left: 13rem;
 }
 @media only screen and (max-width: 950px) {
   .attribution {
