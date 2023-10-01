@@ -14,6 +14,10 @@
   }
 
   .grid-item-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
     h2 {
       font-family: var(--font-poppins), sans-serif;
 
@@ -24,6 +28,18 @@
     button {
       font-family: var(--font-poppins), sans-serif;
       font-size: 1.8rem;
+      align-self: flex-start;
+      padding: 1.4rem 6.2rem;
+      border-radius: 20rem;
+      border: none;
+      box-shadow: 0.2rem 0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.18);
+      color: var(--color-violet);
+      cursor: pointer;
+
+      &:hover {
+        background-color: var(--color-magenta);
+        color: #fff;
+      }
     }
   }
 

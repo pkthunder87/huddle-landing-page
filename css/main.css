@@ -71,6 +71,16 @@ body {
 .huddle .grid-item-1 {
   grid-column: span 2;
 }
+.huddle .grid-item-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
 .huddle .grid-item-3 h2 {
   font-family: var(--font-poppins), sans-serif;
   font-weight: 600;
@@ -79,6 +89,19 @@ body {
 .huddle .grid-item-3 button {
   font-family: var(--font-poppins), sans-serif;
   font-size: 1.8rem;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  padding: 1.4rem 6.2rem;
+  border-radius: 20rem;
+  border: none;
+  -webkit-box-shadow: 0.2rem 0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.18);
+          box-shadow: 0.2rem 0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.18);
+  color: var(--color-violet);
+  cursor: pointer;
+}
+.huddle .grid-item-3 button:hover {
+  background-color: var(--color-magenta);
+  color: #fff;
 }
 .huddle .grid-item-4 {
   grid-column: span 2;
