@@ -14,6 +14,17 @@
   }
 
   .grid-item-3 {
+    h2 {
+      font-family: var(--font-poppins), sans-serif;
+
+      font-weight: 600;
+      font-size: 4rem;
+    }
+
+    button {
+      font-family: var(--font-poppins), sans-serif;
+      font-size: 1.8rem;
+    }
   }
 
   .grid-item-4 {
