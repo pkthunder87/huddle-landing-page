@@ -6,11 +6,17 @@
   height: 800px;
   gap: 10rem;
 
-  .grid-1st {
+  .grid-item-1 {
     grid-column: span 2;
   }
 
-  .grid-4th {
+  .grid-item-2 {
+  }
+
+  .grid-item-3 {
+  }
+
+  .grid-item-4 {
     grid-column: span 2;
     // align-self: end;
     justify-self: end;
