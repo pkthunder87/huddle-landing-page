@@ -56,20 +56,30 @@ body {
           align-items: center;
   background-image: url(../images/bg-desktop.svg);
   background-color: var(--color-violet);
-  background-size: 130rem 80rem;
+  background-size: 131.5rem 80rem;
   background-repeat: no-repeat;
 }
 
 .huddle {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 24% 52% 24%;
   width: 1300px;
   height: 800px;
-  gap: 10rem;
+  -webkit-column-gap: 5.4rem;
+     -moz-column-gap: 5.4rem;
+          column-gap: 5.4rem;
+  margin-left: 0.5rem;
 }
 .huddle .grid-item-1 {
   grid-column: span 2;
+  margin-top: 4.7rem;
+  margin-left: -2.9rem;
+}
+.huddle .grid-item-1 img {
+  -webkit-transform: scale(81%);
+      -ms-transform: scale(81%);
+          transform: scale(81%);
 }
 .huddle .grid-item-3 {
   display: -webkit-box;
@@ -80,11 +90,17 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 2rem;
+  margin-top: 4.4rem;
+  margin-right: 2rem;
 }
 .huddle .grid-item-3 h2 {
   font-family: var(--font-poppins), sans-serif;
   font-weight: 600;
   font-size: 4rem;
+  letter-spacing: -0.2px;
+}
+.huddle .grid-item-3 p {
+  line-height: 1.5;
 }
 .huddle .grid-item-3 button {
   font-family: var(--font-poppins), sans-serif;
@@ -98,6 +114,8 @@ body {
           box-shadow: 0.2rem 0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.18);
   color: var(--color-violet);
   cursor: pointer;
+  margin-top: 0.5rem;
+  background-color: #fff;
 }
 .huddle .grid-item-3 button:hover {
   background-color: var(--color-magenta);
@@ -106,18 +124,21 @@ body {
 .huddle .grid-item-4 {
   grid-column: span 2;
   justify-self: end;
+  align-self: center;
   margin-top: -4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 1.8rem;
+  gap: 1.5rem;
+  margin-top: 6.9rem;
+  margin-right: 1.4rem;
 }
 .huddle .grid-item-4 i {
   height: 20px;
   width: 20px;
   border: 1.9px solid white;
-  font-size: 18px;
-  padding: 18px;
+  font-size: 19px;
+  padding: 19px;
   border-radius: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -145,6 +166,11 @@ body {
 @media only screen and (max-width: 400px) {
   .attribution {
     position: static;
+  }
+}
+@media only screen and (max-height: 700px) {
+  .attribution {
+    bottom: 0;
   }
 }
 

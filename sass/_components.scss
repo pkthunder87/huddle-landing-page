@@ -1,13 +1,20 @@
 .huddle {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 24% 52% 24%;
   width: 1300px;
   height: 800px;
-  gap: 10rem;
+  column-gap: 5.4rem;
+  margin-left: 0.5rem;
 
   .grid-item-1 {
     grid-column: span 2;
+    margin-top: 4.7rem;
+    margin-left: -2.9rem;
+
+    img {
+      transform: scale(81%);
+    }
   }
 
   .grid-item-2 {
@@ -17,12 +24,19 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    margin-top: 4.4rem;
+    margin-right: 2rem;
 
     h2 {
       font-family: var(--font-poppins), sans-serif;
 
       font-weight: 600;
       font-size: 4rem;
+      letter-spacing: -0.2px;
+    }
+
+    p {
+      line-height: 1.5;
     }
 
     button {
@@ -35,6 +49,8 @@
       box-shadow: 0.2rem 0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.18);
       color: var(--color-violet);
       cursor: pointer;
+      margin-top: 0.5rem;
+      background-color: #fff;
 
       &:hover {
         background-color: var(--color-magenta);
@@ -47,16 +63,19 @@
     grid-column: span 2;
     // align-self: end;
     justify-self: end;
+    align-self: center;
     margin-top: -4rem;
     display: flex;
-    gap: 1.8rem;
+    gap: 1.5rem;
+    margin-top: 6.9rem;
+    margin-right: 1.4rem;
 
     i {
       height: 20px;
       width: 20px;
       border: 1.9px solid white;
-      font-size: 18px;
-      padding: 18px;
+      font-size: 19px;
+      padding: 19px;
       border-radius: 100%;
       display: flex;
       justify-content: center;

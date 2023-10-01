@@ -13,6 +13,10 @@
   @media only screen and (max-width: 400px) {
     position: static;
   }
+
+  @media only screen and (max-height: 700px) {
+    bottom: 0;
+  }
 }
 
 .attribution a {
