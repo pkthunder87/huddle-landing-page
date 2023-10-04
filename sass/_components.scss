@@ -1,3 +1,11 @@
+// Remove default link styles
+a:link,
+a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+// Main grid wrapper
 .huddle {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -7,7 +15,8 @@
   column-gap: 5.4rem;
   margin-left: 0.5rem;
 
-  .grid-item-1 {
+  // Logo
+  .grid-item-1-logo {
     grid-column: span 2;
     margin-top: 4.7rem;
     margin-left: -2.9rem;
@@ -17,10 +26,12 @@
     }
   }
 
-  .grid-item-2 {
+  // Main left side image
+  .grid-item-2-image {
   }
 
-  .grid-item-3 {
+  // Main right side details
+  .grid-item-3-details {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -59,9 +70,9 @@
     }
   }
 
-  .grid-item-4 {
+  // Social media icons
+  .grid-item-4-icons {
     grid-column: span 2;
-    // align-self: end;
     justify-self: end;
     align-self: center;
     margin-top: -4rem;

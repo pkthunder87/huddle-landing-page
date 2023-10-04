@@ -60,6 +60,12 @@ body {
   background-repeat: no-repeat;
 }
 
+a:link,
+a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
 .huddle {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -71,17 +77,17 @@ body {
           column-gap: 5.4rem;
   margin-left: 0.5rem;
 }
-.huddle .grid-item-1 {
+.huddle .grid-item-1-logo {
   grid-column: span 2;
   margin-top: 4.7rem;
   margin-left: -2.9rem;
 }
-.huddle .grid-item-1 img {
+.huddle .grid-item-1-logo img {
   -webkit-transform: scale(81%);
       -ms-transform: scale(81%);
           transform: scale(81%);
 }
-.huddle .grid-item-3 {
+.huddle .grid-item-3-details {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -93,16 +99,16 @@ body {
   margin-top: 4.4rem;
   margin-right: 2rem;
 }
-.huddle .grid-item-3 h2 {
+.huddle .grid-item-3-details h2 {
   font-family: var(--font-poppins), sans-serif;
   font-weight: 600;
   font-size: 4rem;
   letter-spacing: -0.2px;
 }
-.huddle .grid-item-3 p {
+.huddle .grid-item-3-details p {
   line-height: 1.5;
 }
-.huddle .grid-item-3 button {
+.huddle .grid-item-3-details button {
   font-family: var(--font-poppins), sans-serif;
   font-size: 1.8rem;
   -ms-flex-item-align: start;
@@ -117,11 +123,11 @@ body {
   margin-top: 0.5rem;
   background-color: #fff;
 }
-.huddle .grid-item-3 button:hover {
+.huddle .grid-item-3-details button:hover {
   background-color: var(--color-magenta);
   color: #fff;
 }
-.huddle .grid-item-4 {
+.huddle .grid-item-4-icons {
   grid-column: span 2;
   justify-self: end;
   align-self: center;
@@ -133,10 +139,10 @@ body {
   margin-top: 6.9rem;
   margin-right: 1.4rem;
 }
-.huddle .grid-item-4 li {
+.huddle .grid-item-4-icons li {
   list-style: none;
 }
-.huddle .grid-item-4 i {
+.huddle .grid-item-4-icons i {
   height: 20px;
   width: 20px;
   border: 1.9px solid white;
@@ -154,7 +160,7 @@ body {
           align-items: center;
   cursor: pointer;
 }
-.huddle .grid-item-4 i:hover {
+.huddle .grid-item-4-icons i:hover {
   color: var(--color-magenta);
   border: 1.9px solid var(--color-magenta);
 }
