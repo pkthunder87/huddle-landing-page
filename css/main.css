@@ -133,6 +133,9 @@ body {
   margin-top: 6.9rem;
   margin-right: 1.4rem;
 }
+.huddle .grid-item-4 li {
+  list-style: none;
+}
 .huddle .grid-item-4 i {
   height: 20px;
   width: 20px;
@@ -149,6 +152,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
+}
+.huddle .grid-item-4 i:hover {
+  color: var(--color-magenta);
+  border: 1.9px solid var(--color-magenta);
 }
 
 .attribution {
