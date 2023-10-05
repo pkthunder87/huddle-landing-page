@@ -11,7 +11,7 @@ This is a solution to the [Huddle landing page with single introductory section 
 
 ### Links
 
-- Live Site URL: [Github Pages](ReplaceWithActualLiveUrl)
+- Live Site URL: [Github Pages](https://pkthunder87.github.io/huddle-landing-page/)
 
 ### Built with
 
