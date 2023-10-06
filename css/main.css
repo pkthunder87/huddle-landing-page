@@ -123,6 +123,8 @@ a:visited {
     width: 100dvw;
     height: auto;
     grid-auto-rows: 150px;
+    margin-left: 3.4rem;
+    margin-top: -1.8rem;
   }
 }
 .huddle .grid-item-1-logo {
@@ -144,7 +146,7 @@ a:visited {
 @media only screen and (max-width: 27.5em) {
   .huddle .grid-item-1-logo {
     grid-column: span 1;
-    margin-top: 2rem;
+    margin-top: 4rem;
     margin-left: -5.9rem;
     text-align: left;
   }
@@ -169,6 +171,9 @@ a:visited {
   }
 }
 @media only screen and (max-width: 27.5em) {
+  .huddle .grid-item-2-image {
+    margin-top: 0.5rem;
+  }
   .huddle .grid-item-2-image img {
     width: 95%;
     height: 95%;
@@ -230,7 +235,8 @@ a:visited {
 }
 @media only screen and (max-width: 27.5em) {
   .huddle .grid-item-3-details {
-    padding: 1.9rem;
+    margin-top: 3.4rem;
+    padding: 1.8rem;
   }
   .huddle .grid-item-3-details h2 {
     font-size: 3rem;
@@ -265,7 +271,8 @@ a:visited {
     grid-column: span 1;
     grid-row: span 2;
     justify-self: center;
-    margin-top: -8rem;
+    margin-top: -9rem;
+    margin-right: 1.4rem;
   }
 }
 .huddle .grid-item-4-icons li {
