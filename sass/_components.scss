@@ -51,7 +51,7 @@ a:visited {
 
   // Main left side image
   .grid-item-2-image {
-    margin-top: -1.8rem;
+    margin-top: 0.1rem;
 
     @include base.breakPoint(base.$bp-phone) {
       img {
