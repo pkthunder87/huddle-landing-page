@@ -31,15 +31,14 @@ html {
           box-sizing: border-box;
   font-size: 62.5%;
 }
-@media only screen and (max-width: 27.5em) {
+@media only screen and (max-width: 75em) {
   html {
     font-size: 50%;
   }
 }
-
 body {
-  height: 800px;
-  width: 1440px;
+  height: 80rem;
+  width: 144rem;
   font-family: var(--font-open-sans), sans-serif;
   font-size: 1.8rem;
   text-align: left;
@@ -64,6 +63,14 @@ body {
   background-size: 131.5rem 80rem;
   background-repeat: no-repeat;
 }
+@media only screen and (max-width: 75em) {
+  body {
+    height: 100rem;
+    width: 150rem;
+    background-size: 140rem 100rem;
+    background-repeat: no-repeat;
+  }
+}
 @media only screen and (max-width: 27.5em) {
   body {
     background-image: url(../images/bg-mobile.svg);
@@ -84,12 +91,23 @@ a:visited {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 24% 52% 24%;
-  width: 1300px;
-  height: 800px;
+  width: 130rem;
+  height: 80rem;
   -webkit-column-gap: 5.4rem;
      -moz-column-gap: 5.4rem;
           column-gap: 5.4rem;
   margin-left: 0.5rem;
+}
+@media only screen and (max-width: 75em) {
+  .huddle {
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 18% 60% 22%;
+    width: 145rem;
+    -webkit-column-gap: 3rem;
+       -moz-column-gap: 3rem;
+            column-gap: 3rem;
+    margin-left: -2.4rem;
+  }
 }
 @media only screen and (max-width: 27.5em) {
   .huddle {
@@ -117,6 +135,12 @@ a:visited {
       -ms-transform: scale(81%);
           transform: scale(81%);
 }
+@media only screen and (max-width: 75em) {
+  .huddle .grid-item-1-logo {
+    margin-top: -2rem;
+    margin-left: 1rem;
+  }
+}
 @media only screen and (max-width: 27.5em) {
   .huddle .grid-item-1-logo {
     grid-column: span 1;
@@ -131,7 +155,18 @@ a:visited {
   }
 }
 .huddle .grid-item-2-image {
-  margin-top: -1.8rem;
+  margin-top: 0.1rem;
+}
+@media only screen and (max-width: 75em) {
+  .huddle .grid-item-2-image {
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .huddle .grid-item-2-image img {
+    -webkit-transform: scale(90%);
+        -ms-transform: scale(90%);
+            transform: scale(90%);
+  }
 }
 @media only screen and (max-width: 27.5em) {
   .huddle .grid-item-2-image img {
@@ -153,6 +188,17 @@ a:visited {
   gap: 2rem;
   margin-top: 4.4rem;
   margin-right: 2rem;
+}
+@media only screen and (max-width: 75em) {
+  .huddle .grid-item-3-details {
+    margin-top: 8.4rem;
+  }
+  .huddle .grid-item-3-details h2 {
+    padding-right: 3rem;
+  }
+  .huddle .grid-item-3-details p {
+    padding-right: 1rem;
+  }
 }
 .huddle .grid-item-3-details h2 {
   font-family: var(--font-poppins), sans-serif;
@@ -207,6 +253,12 @@ a:visited {
   gap: 1.5rem;
   margin-top: 6.9rem;
   margin-right: 1.4rem;
+}
+@media only screen and (max-width: 75em) {
+  .huddle .grid-item-4-icons {
+    margin-top: 27rem;
+    margin-right: 4.4rem;
+  }
 }
 @media only screen and (max-width: 27.5em) {
   .huddle .grid-item-4-icons {

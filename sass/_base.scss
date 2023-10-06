@@ -7,8 +7,8 @@ $bp-tablet: 49.5em; // 792px
 $bp-laptop: 75em; // 1200px
 
 // Mixins
-@mixin breakPoint($bp-phone) {
-  @media only screen and (max-width: $bp-phone) {
+@mixin breakPoint($bp-size) {
+  @media only screen and (max-width: $bp-size) {
     @content;
   }
 }
@@ -56,14 +56,17 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
 
-  @include breakPoint($bp-phone) {
+  @include breakPoint($bp-laptop) {
     font-size: 50%;
+  }
+
+  @include breakPoint($bp-phone) {
   }
 }
 
 body {
-  height: 800px;
-  width: 1440px;
+  height: 80rem;
+  width: 144rem;
   // overflow: hidden;
 
   font-family: var(--font-open-sans), sans-serif;
@@ -81,7 +84,14 @@ body {
   background-color: var(--color-violet);
   background-size: 131.5rem 80rem;
   background-repeat: no-repeat;
-  // background-position-x: 1rem;
+
+  @include breakPoint($bp-laptop) {
+    height: 100rem;
+    width: 150rem;
+
+    background-size: 140rem 100rem;
+    background-repeat: no-repeat;
+  }
 
   @include breakPoint($bp-phone) {
     background-image: url(../images/bg-mobile.svg);

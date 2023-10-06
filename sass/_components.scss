@@ -12,10 +12,19 @@ a:visited {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 24% 52% 24%;
-  width: 1300px;
-  height: 800px;
+  width: 130rem;
+  height: 80rem;
   column-gap: 5.4rem;
   margin-left: 0.5rem;
+
+  @include base.breakPoint(base.$bp-laptop) {
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 18% 60% 22%;
+
+    width: 145rem;
+    column-gap: 3rem;
+    margin-left: -2.4rem;
+  }
 
   @include base.breakPoint(base.$bp-phone) {
     flex-direction: column;
@@ -37,6 +46,11 @@ a:visited {
       transform: scale(81%);
     }
 
+    @include base.breakPoint(base.$bp-laptop) {
+      margin-top: -2rem;
+      margin-left: 1rem;
+    }
+
     @include base.breakPoint(base.$bp-phone) {
       grid-column: span 1;
       margin-top: 2rem;
@@ -51,7 +65,16 @@ a:visited {
 
   // Main left side image
   .grid-item-2-image {
-    margin-top: -1.8rem;
+    margin-top: 0.1rem;
+
+    @include base.breakPoint(base.$bp-laptop) {
+      margin-top: 0;
+      margin-left: 0;
+
+      img {
+        transform: scale(90%);
+      }
+    }
 
     @include base.breakPoint(base.$bp-phone) {
       img {
@@ -70,6 +93,18 @@ a:visited {
     gap: 2rem;
     margin-top: 4.4rem;
     margin-right: 2rem;
+
+    @include base.breakPoint(base.$bp-laptop) {
+      margin-top: 8.4rem;
+
+      h2 {
+        padding-right: 3rem;
+      }
+
+      p {
+        padding-right: 1rem;
+      }
+    }
 
     h2 {
       font-family: var(--font-poppins), sans-serif;
@@ -129,6 +164,11 @@ a:visited {
     gap: 1.5rem;
     margin-top: 6.9rem;
     margin-right: 1.4rem;
+
+    @include base.breakPoint(base.$bp-laptop) {
+      margin-top: 27rem;
+      margin-right: 4.4rem;
+    }
 
     @include base.breakPoint(base.$bp-phone) {
       grid-column: span 1;
